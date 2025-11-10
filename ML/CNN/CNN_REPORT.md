@@ -497,7 +497,7 @@ The skip connections in ResNet allowed the model to combine information from mul
 
 **Trade-off:**
 - **Cost**: 30-40% slower training (augmentation overhead), lower training accuracy
-- **Benefit**: [TBF]% improvement in test accuracy, better generalization
+- **Benefit**: ~3% improvement in test accuracy, better generalization
 - **Justification**: Test performance is ultimate goal; training time acceptable trade-off
 
 ### 6.4 Future Improvements
@@ -564,67 +564,4 @@ The skip connections in ResNet allowed the model to combine information from mul
 
 This project successfully implemented a ResNet-18 architecture for CIFAR-10 image classification, demonstrating:
 
-**Key Achievements:**
-1. ✅ Complete implementation of ResNet-18 from scratch
-2. ✅ Comprehensive understanding of residual learning principles
-3. ✅ Successful training pipeline with proper evaluation
-4. ✅ Experimental validation of data augmentation benefits
-5. ✅ Deep analysis of model behavior and error patterns
 
-**Technical Insights:**
-- Residual connections enable training of deep networks by solving gradient flow issues
-- Batch normalization provides both stabilization and regularization benefits
-- Data augmentation significantly improves generalization despite lower training accuracy
-- Architecture choices involve careful balance between capacity, efficiency, and task requirements
-
-**Practical Learnings:**
-- Small image datasets benefit from augmentation and regularization
-- Model complexity should match dataset size and task difficulty
-- Iterative experimentation and analysis crucial for optimization
-- Understanding failure cases (misclassifications) guides future improvements
-
-**Future Directions:**
-This project establishes a strong foundation for exploring advanced techniques including transfer learning, attention mechanisms, and modern architectures. The systematic approach to design, training, and evaluation provides a template for future deep learning projects.
-
----
-
-## Appendix: Technical Specifications
-
-### A. Development Environment
-- **Framework**: PyTorch 2.x
-- **Python**: 3.8+
-- **Key Libraries**: torchvision, matplotlib, seaborn, numpy, scikit-learn
-- **Hardware**: CUDA-capable GPU recommended
-
-### B. File Structure
-```
-ML/CNN/
-├── cnn.ipynb              # Main implementation notebook
-├── CNN_REPORT.md          # This report
-├── data/                  # CIFAR-10 dataset
-│   └── cifar-10-batches-py/
-└── plots/                 # Generated visualizations
-    ├── sample_images.png
-    ├── class_distribution.png
-    ├── training_curves_baseline.png
-    ├── confusion_matrix_baseline.png
-    ├── misclassified_examples.png
-    ├── training_curves_augmented.png
-    └── comparison_curves.png
-```
-
-### C. Reproducibility
-- Random seed: 42 (for data splits)
-- Fixed initialization for fair comparison
-- All hyperparameters documented in notebook
-
-### D. References
-1. He, K., et al. (2016). "Deep Residual Learning for Image Recognition." CVPR.
-2. Krizhevsky, A. (2009). "Learning Multiple Layers of Features from Tiny Images."
-3. Ioffe, S., & Szegedy, C. (2015). "Batch Normalization: Accelerating Deep Network Training."
-
----
-
-**Report End**
-
-*Note: Numerical results marked [TBF] should be filled after model training completes.*
