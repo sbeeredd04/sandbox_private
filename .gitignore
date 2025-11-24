@@ -1,7 +1,30 @@
-*/data/
+# Ignore extracted image directories (they're in the zip files)
+ML/Capstone/data/celeba/img_align_celeba/
+ML/Capstone/data/food-101/images/
 
-#data folder
-ML/Capstone/data
-/Users/sriujjwalreddyb/sandbox_private/ML/Capstone/data
+# Ignore other large extracted directories
+ML/CNN/data/
 
-ML/CNN/data
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model weights and training artifacts
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Training outputs
+celeba_plots/
+plots/
+
+# Results
+*.json
+*.csv
