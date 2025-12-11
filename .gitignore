@@ -22,3 +22,13 @@ plots/
 # Results
 *.json
 *.csv
+# Large data files (use Git LFS or download separately)
+ML/Capstone/data/celeba/*.zip
+ML/Capstone/data/food-101/*.zip
+
+# Model weights (too large for GitHub)
+*.pth
+*.pt
+
+# Training checkpoints
+*checkpoint*.pth
