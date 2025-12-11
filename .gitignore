@@ -15,12 +15,6 @@ __pycache__/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Model weights and training artifacts
-*.pth
-*.pt
-*.h5
-*.ckpt
-
 # Training outputs
 celeba_plots/
 plots/
